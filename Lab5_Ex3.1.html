@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu cá nhân</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #555;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        /* Thông tin cá nhân */
+        .personal-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .info-block {
+            padding: 20px;
+            background-color: #f8f9ff;
+            border-left: 4px solid #007bff;
+            border-radius: 5px;
+        }
+
+        .info-block strong {
+            color: #007bff;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        .info-block p {
+            color: #333;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        /* Phần tài liệu */
+        .file-section {
+            padding: 20px;
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .file-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 30px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .file-link:hover {
+            background-color: #218838;
+        }
+
+        /* Infographic */
+        .infographic {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .infographic img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .note {
+            margin-top: 10px;
+            font-style: italic;
+            color: #666;
+            text-align: center;
+        }
+
+        /* Video */
+        .video-section {
+            text-align: center;
+        }
+
+        .video-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #000;
+            margin-bottom: 10px;
+        }
+
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #dc3545;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .video-link:hover {
+            background-color: #c82333;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Giới thiệu cá nhân</h1>
+
+        <!-- Phần Thông tin cá nhân -->
+        <div class="section">
+            <h2>📋 Thông tin cá nhân</h2>
+            <div class="personal-info">
+                <div class="info-block">
+                    <strong>Họ và Tên:</strong>
+                    <p>Nguyễn Văn Hải Tinh</p>
+                </div>
+                <div class="info-block">
+                    <strong>MSSV:</strong>
+                    <p>B2509899</p>
+                </div>
+                <div class="info-block">
+                    <strong>Lớp:</strong>
+                    <p>M06</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phần Tài liệu PDF -->
+        <div class="section">
+            <h2>📄 Tài liệu PDF</h2>
+            <div class="file-section">
+                <p>Tải xuống tài liệu chi tiết:</p>
+                <a href="Lab05_Ex1.1.pdf" class="file-link" download>📥 Tải xuống PDF</a>
+            </div>
+        </div>
+
+        <!-- Phần Infographic -->
+        <div class="section">
+            <h2>🎨 Infographic</h2>
+            <div class="infographic">
+                <img src="Lab05_Ex2.1.png" alt="Infographic">
+                <p class="note">
+                    Infographic tạo bởi Canva AI
+                </p>
+            </div>
+        </div>
+
+        <!-- Phần Video YouTube -->
+        <div class="section video-section">
+            <h2>🎥 Video YouTube</h2>
+
+            <div class="video-embed">
+                <iframe 
+                    src="https://www.youtube.com/embed/Fff9XYBzjMI"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <p class="note">
+                Video tạo bởi CapCut, tài liệu từ Pexels/FreeSound (CC0)
+            </p>
+
+            <a href="https://www.youtube.com/watch?v=Fff9XYBzjMI" 
+               target="_blank" 
+               class="video-link">
+                Xem video trên YouTube
+            </a>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 - Trang giới thiệu cá nhân</p>
+        </footer>
+    </div>
+</body>
+</html>
